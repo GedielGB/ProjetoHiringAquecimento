@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" integrity="sha384-/frq1SRXYH/bSyou/HUp/hib7RVN1TawQYja658FEOodR/FQBKVqT9Ol+Oz3Olq5" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap" rel="stylesheet"> 
+    <title>Gediel Barbutti</title>
+</head>
+<body>
+    <div class="banner">
+        <video autoplay muted loop>
+            <source src="./video/pexels-rostislav-uzunov-5453622.mp4" type="video/mp4">
+        </video>
+    </div>
+    <header>
+        <div>
+            <h2>Gb|Gediel</h4>
+        </div>
+
+        <ul>
+            <li>
+                <a target="_blank" href="https://github.com/GedielGb">Github</a>
+            </li>
+            <li>
+                <a target="_blank" href="mailto:sgtmntcom@gmail.com">Email</a>
+            </li>
+            <li>
+                <a target="_blank" href="https://wa.me/199999-9999">Whatsapp</a>
+            </li>
+        </ul>        
+    </header>
+    <main>
+        <section class="container">
+            <div class="name">
+                <h1>Gediel Barbutti</h1>
+                <h5>Systems Analyst | Full Stack Developer Student |
+                    Engineering student | Cybersecurity Entusiasth</h5>
+            </div>
+
+            <div onclick="displayAbout()" id="arrow">
+                <i id="animation" class="fa-solid fa-sort-down"></i>
+            </div>
+
+            <div style="display: none;" id="about">
+                <p>
+                    Cursando Engenharia de Computação pela UNIVESP, 
+                    formado em Análise e Desenvolvimento de Sistemas pela UNIP, 
+                    Técnico em Eletrônica - Comunicação e Aquisição de Dados e 
+                    Manutenção Mecânica pelo SENAI. Possuo cursos na área de Cybersecurity:
+                    Introduction to cybersecurity - CISCO, Cybersecurity Essentials - CISCO, 
+                    Information Security: Context and introduction - University of London,
+                    Network Security & Database Vulnerabilities - IBM, Cybersecurity Compliance 
+                    Framework & System Administration - IBM, Cybersecurity Roles, Processes
+                    & Operating System Security - IBM, Introduction to Cybersecurity Tools
+                    & Cyber Attacks - IBM, e, Forense Computacional - Udemy. Sou especialista
+                    em montagem, manutenção e configuração de computadores, tal como, desenvolvimento
+                    e manutenção de sistemas de comunicação. Tenho conhecimentos nas linguagens de programação:
+                    C++, C#, Asp.net, JavaScript, Labview e na linguagem de marcação Html. 
+                    Fiz parte da equipe de editoração e formatação de apostilas do SENAI, assim como, 
+                    fui bolsista FAPESP no Instituto de Física Gleb Wataghin (IFGW) da Universidade 
+                    Estadual de Campinas (UNICAMP) vinculado ao Estudo e desenvolvimento de processos 
+                    de replicação de elementos ópticos difrativos, atuando na automatização dos sistemas
+                    de gravação a Laser utilizando Labview. Possuo, ainda, experiências em manutenção de 
+                    sistemas de telecomunicação no Exército Brasileiro e, atualmente, sou Agente de Segurança
+                    Pública no Governo do Estado de São Paulo. 
+                </p>
+            </div>
+            <div class="form">
+                <div>
+                    <p>Deixe seu contato</p>
+                </div>
+                <form action="">
+                    <input type="text" placeholder="seu email principal">
+                    <button>Enviar</button>
+                </form>
+            </div>
+        </section>
+
+
+    </main>
+    <script>
+        function displayAbout() {
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+            var display = document.getElementById('about');
+            display.classList.toggle('active');
+        }
+    </script>
+    <script src="https://kit.fontawesome.com/d9ec5610f6.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
