@@ -1,94 +1,92 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Goldman', cursive;
-    color: yellow;      
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Goldman', cursive;
+  color: yellow;
 }
 
 ul {
-    list-style: none;
-    font-size: 20px;
-  }
+  list-style: none;
+  font-size: 20px;
+}
 
 a {
-    text-decoration: none;
-    font-weight: 1000;
+  text-decoration: none;
+  font-weight: 1000;
 }
 
 .banner video {
-    position: fixed;
-    top: 0;
-    left: 0;
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-  }
+  position: fixed;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
 
-  header {
-    position: relative;
-    z-index: 1;
-    max-width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center; 
-    border-bottom: 15px ridge yellow;
-  }
+header {
+  position: relative;
+  z-index: 1;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 15px ridge yellow;
+}
 
-  header ul {
-    display: flex;    
-  }
+header ul {
+  display: flex;
+}
 
-  header ul li {
-    padding: 5px;
-  }
+header ul li {
+  padding: 5px;
+}
 
-  header ul li a {
- transition: 400ms;
-  }
+header ul li a {
+  transition: 400ms;
+}
 
-  header ul li a:hover {
-    color: #c0a717;
-    text-decoration: underline;
-  }
+header ul li a:hover {
+  color: #c0a717;
+  text-decoration: underline;
+}
 
-  header h2 {
-    font-size: 50px;
-  }
+header h2 {
+  font-size: 50px;
+}
 
-  body {
-    height: 100vh;    
-  }
+body {
+  height: 100vh;
+}
 
 .logoPagina {
-      width: 100px;
-      height: 100px;
+  width: 100px;
+  height: 100px;
+}
 
-  } 
+main {
+  display: flex;
+  position: relative;
+  z-index: 1;
+  max-width: 100%;
+  height: 90%;
+  justify-content: center;
+  align-items: center;
+}
 
-  main {
-    display: flex;
-    position: relative;
-    z-index: 1;
-    max-width: 100%;
-    height: 90%;
-    justify-content: center;
-    align-items: center;
-    
-    }
+.container {
+  text-align: center;
+}
 
-  .container {  
-      text-align: center;   
-  }
+.container .name h1 {
+  font-size: 60px;
+}
 
-  .container .name h1 {
-      font-size: 60px;
-  }
-
-  .container .name h5 {
-    font-size: 25px;
-    max-width: 1000px;
-    margin: 0 auto;
+.container .name h5 {
+  font-size: 25px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 #arrow {
@@ -96,6 +94,7 @@ a {
   cursor: pointer;
   animation: blink 1s steps(5, start) infinite;
 }
+
 @keyframes blink {
   to {
     visibility: hidden;
@@ -123,7 +122,7 @@ a {
 .form {
   width: 40%;
   margin: 0 auto;
-  border: thick double yellow ;
+  border: thick double yellow;
   margin-top: 10px;
   padding: 25px;
 }
@@ -131,22 +130,23 @@ a {
 .form input {
   width: 50%;
   padding: 5px;
-  border:none;
+  border: none;
   margin: 0 auto;
   color: black;
 }
-.form p{
+
+.form p {
   margin: 20px;
 }
 
 .form button {
   width: 20%;
-  padding: 5px ;
+  padding: 5px;
   background-color: #c0a717;
   color: #464646;
   font-weight: 700;
   border: none;
-  cursor: pointer; 
+  cursor: pointer;
   transition: 400ms;
 }
 
@@ -154,3 +154,97 @@ a {
   background-color: rgb(138, 138, 11);
   color: white;
 }
+
+@media screen and (max-width: 600px) {
+  .form {
+    width: 80%;
+    margin: 0 auto;
+    border: thick double yellow;
+    margin-top: 10px;
+    padding: 25px;
+  }
+
+  .form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    color: black;
+  }
+
+  .form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #c0a717;
+    color: #464646;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    transition: 400ms;
+    margin-top: 10px;
+    }
+    
+    .form button:hover {
+    background-color: rgb(138, 138, 11);
+    color: white;
+    }
+    
+    .form p {
+    font-size: 14px;
+    margin: 10px;
+    }
+    }
+    
+    /* Este código é para a seção do rodapé */
+    
+    footer {
+    background-color: #1c1c1c;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    footer p {
+    font-size: 18px;
+    }
+    
+    footer a {
+    color: yellow;
+    text-decoration: none;
+    font-weight: 600;
+    }
+    
+    /* Código para animação de carregamento */
+    
+    @keyframes spinner {
+    to {
+    transform: rotate(360deg);
+    }
+    }
+    
+    .loader {
+    border-top-color: transparent;
+    border-left-color: transparent;
+    animation: spinner 500ms linear infinite;
+    }
+    
+    .loader:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 50%;
+    border: 2px solid #f3f3f3;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    animation: spinner 700ms linear infinite;
+    }
+    
+    
+    
+    
+    
+    
